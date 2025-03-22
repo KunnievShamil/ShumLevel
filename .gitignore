@@ -1,0 +1,73 @@
+# Android Studio/IntelliJ
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Build output
+/build
+/captures
+
+# NDK
+.externalNativeBuild
+.cxx
+
+# Gradle
+.gradle/
+build/
+.gradle-cache/
+*.lock
+
+# Generated files
+gen/
+bin/
+out/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# Virtual machine crash logs, see https://developer.android.com/studio/known-issues
+hs_err_pid*
+
+# Android specific
+*.apk
+*.ap_
+*.aab
+*.hprof
+
+# Proguard
+proguard/
+proguard-*.txt
+
+# lint
+lint/intermediates/
+lint/generated/
+
+# Test outputs
+*.testoutput
+*.unitTest
+/test-results/
+
+# Coverage reports
+*.ec
+coverage/
+
+# Dependency folders
+.idea/
+**/node_modules/
