@@ -1,4 +1,4 @@
-package ru.codesh.shumlevel.ui.theme
+package ru.codesh.shumlevel.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
