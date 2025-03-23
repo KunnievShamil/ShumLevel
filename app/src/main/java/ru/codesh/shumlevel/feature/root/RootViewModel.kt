@@ -14,4 +14,12 @@ class RootViewModel : BaseViewModel<RootUiState, RootUiEvent>(RootUiState()) {
             )
         }
     }
+
+    fun setPermissionUnknown() {
+        mutableState.update { uiState ->
+            uiState.copy(
+                permissionState = PermissionState.Unknown
+            )
+        }
+    }
 }
