@@ -30,7 +30,9 @@ import org.koin.compose.getKoin
 import org.koin.compose.viewmodel.koinViewModel
 import ru.codesh.shumlevel.core.permission.PermissionManager
 import ru.codesh.shumlevel.core.ui.base.BaseScreen
-import ru.codesh.shumlevel.feature.soundanalyzer.SoundAnalyzerScreen
+import ru.codesh.shumlevel.feature.aboutapp.AboutAppScreen
+
+private const val FIST_OPEN_FLAG = "FIST_OPEN_FLAG"
 
 class RootScreen : BaseScreen() {
 
@@ -60,7 +62,7 @@ class RootScreen : BaseScreen() {
         LaunchedEffect(state.permissionState) {
             if (permissionManager.hasAudioPermission()) {
                 viewModel.setPermissionGranted(true)
-                navigator.replace(SoundAnalyzerScreen())
+                navigator.replace(AboutAppScreen())
             } else {
                 launcher.launch(Manifest.permission.RECORD_AUDIO)
             }
